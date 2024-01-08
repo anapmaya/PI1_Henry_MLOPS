@@ -8,7 +8,7 @@
   <img src="./readme_img/mlops-flow.png">
 </p>
 
-Desarrollado por Ana Paulina Maya Cohorte 16
+Desarrollado por Ana Paulina Maya Cohorte 18
 
 El objetivo de este proyecto es situarnos en el rol de un MLOps Engineer, el cual combina las funciones de un Data Engineer y un Data Scientist. Partimos de un dataset compuesto por tres bases de datos de la plataforma Steam. Debemos realizar un Analísis exploratorio de los datos -EDA- y un proceso de Extracción, Transformación y disponibilización de dichos datos -ETL-.
 
@@ -34,6 +34,8 @@ Para comenzar era necesario extraer la información almacenada en cada dataset. 
 
 Después del ETL pasamos a hacer un análisis exploratorio de los datos en el cual el enfoque estuvo en análisis estadísiticos, revisión de outliers y relaciones entre variables. Lo que se buscaba con este proceso era identificar las variables a utilizar para el modelo de recomendación y la construcción de un dataset específico para el modelo de Machine Leraning. Este proceso se encuentra debidamente detallado y comentado en el notebook [EDA](EDA.ipynb)
 
+### Modelo de Machine Learning
+
 ### Desarrollo de la API
 
 La aplicación desarrollada es de tipo API Rest y fue creada a través del framework FastApi.
@@ -54,3 +56,17 @@ Los endpoints solicitados fueron los siguientes:
 - Sentiment_analysis: Según la empresa desarrolladora, se devuelve un diccionario con el nombre de la desarrolladora como llave y una lista con la cantidad total de registros de reseñas de usuarios que se encuentren categorizados con un análisis de sentimiento como valor.
 
 El desarrollo de estos endpoints se puede encontrar detallado en el notebook [Endpoints](Endpoints.ipynb)
+
+El código para la API, que funcionó de manera local, se encuentra en el archivo [main.py](main.py)
+
+### Deployment
+
+La aplicación se encuentra disponible en [el siguiente enlace](https://api-steam-deploy-6jck.onrender.com/docs)
+
+Para el deploy de la API se utilizó la plataforma Render que es una nube unificada para crear y ejecutar aplicaciones y sitios web, permitiendo el despliegue automático desde GitHub. Dado que el servicio gratuito cuenta con una limitada capacidad de almacenamiento, se realizó un repositorio exclusivo para el deploy, el cual [se encuentra aquí](https://github.com/anapmaya/api-deploy)
+
+También, debido a la limitación mencionada anteriormente, fue necesario reducir el tamaño del dataset user_items. Se generó un nuevo archivo tomando únicamente la mtad de los registros del original. Tengo claro que eso influirá directamente en los resultados de algunas consultas pero fue la solución que decidí adoptar para lograr el producto mínimo viable solicitado.
+
+## Video
+
+En [este video] se explica brevemente este proyecto mostrando el funcionamiento de la API.
