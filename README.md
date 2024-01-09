@@ -32,7 +32,7 @@ Para comenzar era necesario extraer la información almacenada en cada dataset. 
 
 ### EDA
 
-Después del ETL pasamos a hacer un análisis exploratorio de los datos en el cual el enfoque estuvo en análisis estadísiticos, revisión de outliers y relaciones entre variables. Lo que se buscaba con este proceso era identificar las variables a utilizar para el modelo de recomendación y la construcción de un dataset específico para el modelo de Machine Leraning. Este proceso se encuentra debidamente detallado y comentado en el notebook [EDA](EDA.ipynb)
+Después del ETL lo siguiente fue hacer un análisis exploratorio de los datos, en el cual el enfoque estuvo en análisis estadísiticos, revisión de outliers y relaciones entre variables. Lo que se buscaba con este proceso era identificar las variables a utilizar para el modelo de recomendación y la construcción de un dataset específico para el modelo de Machine Leraning. Este proceso se encuentra debidamente detallado y comentado en el notebook [EDA](EDA.ipynb)
 
 ### Modelo de Machine Learning
 
@@ -63,9 +63,9 @@ El código para la API, que funcionó de manera local, se encuentra en el archiv
 
 La aplicación se encuentra disponible en [el siguiente enlace](https://api-steam-deploy-6jck.onrender.com/docs)
 
-Para el deploy de la API se utilizó la plataforma Render que es una nube unificada para crear y ejecutar aplicaciones y sitios web, permitiendo el despliegue automático desde GitHub. Dado que el servicio gratuito cuenta con una limitada capacidad de almacenamiento, se realizó un repositorio exclusivo para el deploy, el cual [se encuentra aquí](https://github.com/anapmaya/api-deploy)
+Para el deploy de la API se utilizó la plataforma Render que es una nube unificada para crear y ejecutar aplicaciones y sitios web, permitiendo el despliegue automático desde GitHub. Dado que el servicio gratuito cuenta con una limitada capacidad de almacenamiento, se creó un repositorio exclusivo para el deploy, el cual [se encuentra aquí](https://github.com/anapmaya/api-deploy)
 
-También, debido a la limitación mencionada anteriormente, fue necesario reducir el tamaño del dataset user_items. Se generó un nuevo archivo tomando únicamente la mtad de los registros del original. Tengo claro que eso influirá directamente en los resultados de algunas consultas pero fue la solución que decidí adoptar para lograr el producto mínimo viable solicitado.
+También, debido a la limitación mencionada anteriormente, fue necesario reducir el tamaño del dataset user_items. Se generó un nuevo archivo tomando únicamente la mitad de los registros del original. Tengo claro que eso influirá directamente en los resultados de algunas consultas pero fue la solución que decidí adoptar para lograr el producto mínimo viable solicitado.
 
 ## Video
 
