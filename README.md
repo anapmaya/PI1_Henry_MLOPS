@@ -61,7 +61,7 @@ El código para la API, que funcionó de manera local, se encuentra en el archiv
 
 ### Deployment
 
-La aplicación se encuentra disponible en [el siguiente enlace](https://api-steam-deploy-6jck.onrender.com/docs)
+La aplicación se encuentra disponible en [el siguiente enlace](https://api-endpoints-modelo.onrender.com/docs)
 
 Para el deploy de la API se utilizó la plataforma Render que es una nube unificada para crear y ejecutar aplicaciones y sitios web, permitiendo el despliegue automático desde GitHub. Dado que el servicio gratuito cuenta con una limitada capacidad de almacenamiento, se creó un repositorio exclusivo para el deploy, el cual [se encuentra aquí](https://github.com/anapmaya/api-deploy)
 
