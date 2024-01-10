@@ -36,6 +36,23 @@ Después del ETL lo siguiente fue hacer un análisis exploratorio de los datos, 
 
 ### Modelo de Machine Learning
 
+En esta etapa se implementó un modelo sencillo de recomendación, basado en el cálculo de similitud de coseno entre las reseñas de los usuarios, utilizando la matriz TF-IDF y la búsqueda de los juegos más similares al juego dado.
+El proceso tanto de la elección del dataset para este modelo, como del desarrollo del modelo mismo, se puede encontrar comentado y detallado en el notebook [Modelo.ipynb](Modelo.ipynb)
+
+En resumen, estos fueron los pasos a seguir:
+- Preparar el dataset con las columnas correspondientes a 'item_id', 'Item_name' y reviews
+- Agrupar los reviews por juego
+- Vectorizar los reviews mediante tf-idf, usando stop words en inglés
+- Aplicar el vectorizador tf-idf a la columna 'review' del dataframe agrupado
+- Calcular la similitud del coseno entre las reseñas utilizando linear_kernel
+- Buscar el indice correspondiente al item_id de entrada de la función
+- Crear una lista de tuples, donde cada tuple contiene el índice del artículo y su puntaje de similitud de coseno con el artículo específico
+- Ordenar las reseñas y seleccionar las 5 más similares
+- obtener la lista de los 'item_id' correspondiente a los índices seleccionados
+- Obtener los nombres de estos juegos y devolverlos en una lista
+
+La función que recibe el item_id y devuelve los juegos recomendados, se puede encontrar junto con los endpoints en la aplicación [deployada en render](https://api-endpoints-modelo.onrender.com/docs).
+
 ### Desarrollo de la API
 
 La aplicación desarrollada es de tipo API Rest y fue creada a través del framework FastApi.
