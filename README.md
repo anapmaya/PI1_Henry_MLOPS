@@ -85,5 +85,6 @@ Para el deploy de la API se utilizó la plataforma Render que es una nube unific
 También, debido a la limitación mencionada anteriormente, fue necesario reducir el tamaño del dataset user_items. Se generó un nuevo archivo tomando únicamente la mitad de los registros del original. Tengo claro que eso influirá directamente en los resultados de algunas consultas pero fue la solución que decidí adoptar para lograr el producto mínimo viable solicitado.
 
 ## Video
+https://drive.google.com/file/d/1xgP_gSKvi64ZodHJBpKqe9Q8S4DLNesI/view?usp=sharing
 
-En [este video] se explica brevemente este proyecto mostrando el funcionamiento de la API.
+En este video se explica brevemente este proyecto mostrando el funcionamiento de la API.
